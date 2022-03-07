@@ -1,20 +1,20 @@
 (function() {
-  // sceneXXXは、各ゲーム画面の要素です
+  // scene~は、各ゲーム画面の要素
   const sceneTop = document.getElementById("sceneTop");
   const sceneGame = document.getElementById("sceneGame");
   const sceneResult = document.getElementById("sceneResult");
-  // 問題文を表示する要素です
+  // 問題文を表示する要素
   const textQuestion = document.getElementById("textQuestion");
-  // 選択肢を表示する要素です
+  // 選択肢を表示する要素
   const listAnswer = document.getElementById("listAnswer");
-  // 正解数を表示する要素です
+  // 正解数を表示する要素
   const numResult = document.getElementById("numResult");
-  // トップ画面にて、ゲームを開始するボタン要素です
+  // トップ画面にて、ゲームを開始するボタン要素
   const btnStart = document.getElementById("btnStart");
-  // リザルト画面にて、ゲームをリセットしトップへ戻るボタン要素です
+  // リザルト画面にて、ゲームをリセットしトップへ戻るボタン要素
   const btnReset = document.getElementById("btnReset");
 
-  //問題文を格納する要素です
+  //問題文を格納する要素
   const question = [
     {
       text: "トヨタ自動車の現在の社長の名前は？",
@@ -38,17 +38,17 @@
     }
     ];
     
-  // ゲームで使用する共通の変数です
-  // answer...プレイヤーの答えと比較する、正解のテキストです
-  // gameCount...プレイヤーが答えた数です
-  // success...プレイヤーが答えて、正解した数です
+ 
+  // answer...プレイヤーの答えと比較する、正解のテキスト
+  // gameCount...プレイヤーが答えた数
+  // success...プレイヤーが答えて、正解した数
   let state = {
     answer: "",
     gameCount: 0,
     success: 0
   };
 
-  // ゲームをリセットする関数を書いてみましょう
+  // ゲームをリセットする関数
   function init() {
     state.gameCount = 0;
     state.success = 0;
