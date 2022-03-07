@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>クイズゲーム</title>
+    <link rel="stylesheet" type="style.css" href="style.css" />
   </head>
   <body>
-    <h1>a</h1>
-    <p class="little">b</p>
-    <p class="awesome">c</p>
-    <p id="d">d <span class="little">e</span></p>
-    <p class="awesome">f</p>
+    <div id="sceneTop" class="top screen">
+      <h1>４択クイズ</h1>
+      <button id="btnStart">Game Start</button>
+    </div>
+
+    <div id="sceneGame" class="game screen">
+      <h1>ゲーム画面</h1>
+      <p id="textQuestion"></p>
+      <ul id="listAnswer"></ul>
+    </div>
+
+    <div id="sceneResult" class="result screen">
+      <h1>正解数</h1>
+      <p>正解は<span id="numResult"></span>問です。</p>
+      <!-- <button id="btnReset">Reset</button> -->
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
