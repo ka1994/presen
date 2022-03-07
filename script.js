@@ -107,12 +107,12 @@
   // 上でチェックし、正解だった場合
   function correctAnswer() {
     state.success++;
-    console.log("正解");
+    window.alert("正解");
   }
 
   // 上でチェックし、不正解だった場合
   function incorrectAnswer() {
-    console.log("不正解");
+    window.alert("不正解");
   }
 
   // スタートボタンが押された時
