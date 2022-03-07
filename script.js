@@ -66,7 +66,7 @@
 
   // 問題と選択肢をViewに表示し、正解を共通の変数へ代入
   function showQuestion() {
-    var str = "";
+    let str = "";
     question[state.gameCount].choice.forEach(function(value) {
       str += '<li class="questionChoice">' + value + "</li>";
     });
